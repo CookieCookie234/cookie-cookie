@@ -1,41 +1,152 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Cookie Cookie</title>
-    <style>
-      body {
-        font-family: sans-serif;
-        background-color: #fff7f0;
-        text-align: center;
-        padding: 50px;
-      }
-      h1 {
-        font-size: 48px;
-        color: #d2691e;
-      }
-      p {
-        font-size: 20px;
-        color: #333;
-      }
-      img {
-        margin-top: 30px;
-        width: 300px;
-        border-radius: 12px;
-      }
-    </style>
-  </head>
-  <body> 
-    <nav>
-  <a href="order.html">Order</a> 
-  <a href="order.html">Cookies</a>
-</nav>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cookie Cookie</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #ffffff;
+      color: #f44336;
+    }
 
-    <h1>Welcome to Cookie Cookie 🍪</h1>
-    <p>Fresh-baked cookies made with love in Toronto.</p>
-    <img src="cookie.jpg" alt="A delicious cookie" />
-  </body>
+    /* Top red banner */
+    .top-banner {
+      background-color: #f44336;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      font-weight: bold;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    /* Header with logo and nav */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      text-align: center;
+      flex: 1 1 100%;
+      margin: 20px 0;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #5f524c;
+      margin-bottom: 10px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .cart-icon {
+      position: absolute;
+      right: 40px;
+      top: 75px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .main {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .cookies-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 40px 0;
+    }
+
+    .cookies-row img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 100px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .headline {
+      font-size: 48px;
+      font-weight: 900;
+      color: rgba(244, 67, 54, 0.15); /* light pink backdrop text */
+      margin: 40px 0 10px;
+    }
+
+    .headline strong {
+      color: #f44336;
+    }
+
+    .subtext {
+      font-size: 18px;
+      font-weight: 600;
+      color: #f7d7d0;
+      margin-bottom: 10px;
+    }
+
+    .menu {
+      font-size: 14px;
+      font-weight: bold;
+      color: #f44336;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-banner">ORDER ONLINE</div>
+
+  <div class="header">
+    <div class="logo">
+      <img src="your-logo.png" alt="Cookie Cookie Logo" width="120">
+    </div>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="order.html">Order</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="delivery.html">Delivery</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+    <div class="cart-icon">🛒</div>
+  </div>
+
+  <div class="main">
+    <div class="cookies-row">
+      <img src="cookie1.jpg" alt="Cookie 1">
+      <img src="cookie2.jpg" alt="Cookie 2">
+      <img src="cookie3.jpg" alt="Cookie 3">
+      <img src="cookie4.jpg" alt="Cookie 4">
+      <img src="cookie5.jpg" alt="Cookie 5">
+      <img src="cookie6.jpg" alt="Cookie 6">
+    </div>
+
+    <div class="headline">
+      there's always<br>a reason for <strong>cookies.</strong>
+    </div>
+
+    <div class="subtext">menu for june 25th–28th</div>
+    <div class="menu">
+      chocolate chunk, strawberry milkshake, dulce de leche cheesecake,<br>
+      pride birthday cake, triple chocolate, honey pistachio
+    </div>
+  </div>
+
+</body>
 </html>
-
-  
-
-
